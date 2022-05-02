@@ -1,0 +1,43 @@
+'''
+apple=49
+man=3
+꺼낸횟수=0
+
+
+while 사과갯수>=사람수:
+    #사람수 만큼 사과갯수를 뺍니다.
+    사과갯수-=사람수
+
+    #꺼낸 횟수는 1만큼씩 증가
+    꺼낸횟수 +=1
+    
+
+print(f'남은사과는 {apple}입니다.')
+print(f'한사람당 몫은 {꺼낸횟수}입니다.')
+
+BOARD=[[1,2,3],
+       [4,0,6],
+       [7,8,5]]
+#화면에 보드 상태 보여주기
+print(BOARD[0])
+print(BOARD[1])
+print(BOARD[2])
+
+r=1
+c=1
+
+key=input('wasd중에 하나입력')
+
+#만약 key값이 d와 같다면
+#BOARD[2][2]와 BOARD[2][1]을 서로 바꾸기.
+
+if key=='d':
+    #왼손, 오른손=오른손, 왼손
+    BOARD[r][c+1],BOARD[r][c]=BOARD[r][c],BOARD[c][c+1]
+    r=r
+    c=c+1
+    
+print(BOARD[0])
+print(BOARD[1])
+print(BOARD[2])
+'''
